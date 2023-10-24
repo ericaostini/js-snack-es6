@@ -74,17 +74,19 @@ for (let i = 0; i < vips.length; i++){
     )
 }
 console.log(invitati)
-const lista = document.getElementById("lista")
-    lista.innerHTML += `
-    <ul>
-        <li> Guest Name: ${invitati.guestName} </li>
-        <li> Table Name: ${invitati.tableName} </li>
-        <li> Place: ${invitati.place} </li>
-    </ul>
-    `
+function displaySegnaPosto(invitati){
+    const lista = document.getElementById("lista")
+        lista.innerHTML += `
+        <ul>
+            <li> Guest Name: ${invitati.guestName} </li>
+            <li> Table Name: ${invitati.tableName} </li>
+            <li> Place: ${invitati.place} </li>
+        </ul>
+        `;
+}
 
 
-// vips.forEach((vip) => displaySegnaPosto(vip)) 
+invitati.forEach((vip) => displaySegnaPosto(vip)) 
 
 
 // function displaySegnaPosto(vip){
