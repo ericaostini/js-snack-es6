@@ -148,11 +148,20 @@ const nameUpperCase = students.map((studenti) => {
     `;
 });
 
-const voto70 = students.filter((studenti) => studenti.Grades > 70);
+const lista70 = document.getElementById("voto70");
+const lista120 = document.getElementById("votoId120");
+const voto70 = students.filter(checkVoto);
 console.log(voto70);
+function checkVoto(studenti){
+    return studenti.Grades > 70;
+}
+const listaVoti = JSON.stringify(voto70);
+lista70.innerHTML = "Studenti con Grades > 70: <br>" + listaVoti;
 
 const voto70AndId120 = students.filter((studenti) => studenti.Grades > 70 && studenti.Id > 120);
 console.log(voto70AndId120);
+const listaVotID = JSON.stringify(voto70AndId120);
+lista120.innerHTML = "Studenti con Grades > 70 e Id > 120: <br>" + listaVotID;
 
     
 
