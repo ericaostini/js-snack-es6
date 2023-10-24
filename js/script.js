@@ -124,6 +124,9 @@ upperList.innerHTML += nameUpperCase;
 const voto70 = students.filter((studenti) => studenti.Grades > 70);
 console.log(voto70);
 
+const voto70AndId120 = students.filter((studenti) => studenti.Grades > 70 && studenti.Id > 120);
+console.log(voto70AndId120);
+
     
 
 
