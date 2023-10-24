@@ -139,10 +139,14 @@ const students = [
     }
 ];
 
-const upperList = document.getElementById("upperList")
-const nameUpperCase = students.map((studenti) => studenti.Name.toUpperCase());
-console.log(nameUpperCase);
-upperList.innerHTML += nameUpperCase;
+const nameUpperCase = students.map((studenti) => {
+    const upperList = document.getElementById("upperList")
+    upperList.innerHTML += `
+    <ul>
+        <li> ${studenti.Name.toUpperCase()} </li>
+    </ul>
+    `;
+});
 
 const voto70 = students.filter((studenti) => studenti.Grades > 70);
 console.log(voto70);
