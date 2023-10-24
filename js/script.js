@@ -62,8 +62,20 @@ const vips = [
     }
 ]
 
-const lista = document.getElementById("lista")
-vips.forEach((vip) => );
+
+vips.forEach((vip) => displaySegnaPosto(vip)) 
+
+
+function displaySegnaPosto(vip){
+    const lista = document.getElementById("lista")
+    lista.innerHTML += `
+    <ul>
+        <li> Guest Name: ${vip.guestName} </li>
+        <li> Table Name: ${vip.tableName} </li>
+        <li> Place: ${vip.place} </li>
+    </ul>
+    `
+}
 
 
 
