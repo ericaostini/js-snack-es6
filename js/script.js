@@ -211,6 +211,18 @@ const teamStatistics = teams.map((team) => {
 })
 console.log(teamStatistics);
 
+const statistiche = document.getElementById("statistiche")
+function displayStatistic(teamStatistics){
+    statistiche.innerHTML += `
+    <ul>
+        <li> Nome: ${teamStatistics.name} </li>
+        <li> points: ${teamStatistics.points} </li>
+        <li> fouls: ${teamStatistics.fouls} </li>
+    </ul>
+    `
+}
+teamStatistics.forEach(team => displayStatistic(team))
+
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
