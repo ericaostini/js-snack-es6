@@ -113,10 +113,15 @@ lista120.innerHTML = "Studenti con Grades > 70 e Id > 120: <br>" + listaVotID;
 
 //snack 3
 const bike = ["Bianchi Oltre RC", "Look 795", "Willer O", "Pinarello Dogma F", "Colnago V4Rs"]
-const weight = [6.8, 7.2, 6.9, 8.6, 7.4]
+const weight = [6.8, 7.2, 6.9, 8.6, 7.4];
 
-const 
-    
+bike.forEach((bycicle, index, array)=>{
+    array[index] = {
+        bycicle,
+        weight: weight[index]
+    }
+})
+console.log(bike)
 
 
 
