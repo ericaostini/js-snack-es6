@@ -153,8 +153,12 @@ const racingBikes = [
         weight: 7.4
     }
 ]
-const {weight} = racingBikes;
-console.log(weight);
+const weights = racingBikes.map(bike => bike.weight)
+console.log(weights)
+const minWeights = Math.min(...weights);
+console.log(minWeights)
+const bikeLower = racingBikes.filter(bike => bike.weight === minWeights)
+console.log(bikeLower)
 
 //snack 4 
 const teams = [
@@ -187,10 +191,10 @@ const teamStatistics = teams.map((team) => {
         fouls: getRndInteger(0,100)
     }
     const {name, fouls} = teamStatistic;
-    console.log(name, fouls)
+    console.log(name, fouls);
     return teamStatistic
 })
-console.log(teamStatistics)
+console.log(teamStatistics);
 
 
 function getRndInteger(min, max) {
