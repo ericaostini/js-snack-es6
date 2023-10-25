@@ -182,10 +182,12 @@ const teams = [
 
 const teamStatistics = teams.map((team) => {
     const teamStatistic = {
-        name: team,
+        name: team.name,
         points: getRndInteger(0,100),
         fouls: getRndInteger(0,100)
     }
+    const {name, fouls} = teamStatistic;
+    console.log(name, fouls)
     return teamStatistic
 })
 console.log(teamStatistics)
