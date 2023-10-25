@@ -63,13 +63,13 @@
 // ]
 const vips = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 const invitati = [];
-const tavolo = "Tavolo Vip"
+const tavolo = "Tavolo Vip";
 for (let i = 0; i < vips.length; i++){
     invitati.push(
         {
             guestName: vips[i],
             tableName: tavolo,
-            place: i
+            place: i + 1
         }
     )
 }
@@ -89,16 +89,17 @@ function displaySegnaPosto(invitati){
 invitati.forEach((vip) => displaySegnaPosto(vip)) 
 
 
-// function displaySegnaPosto(vip){
-//     const lista = document.getElementById("lista")
-//     lista.innerHTML += `
-//     <ul>
-//         <li> Guest Name: ${vip.guestName} </li>
-//         <li> Table Name: ${vip.tableName} </li>
-//         <li> Place: ${vip.place} </li>
-//     </ul>
-//     `
-// }
+/*
+const placeHolders = vips.map((vip,index) => {
+    const placeholder = {
+        guest: vip,
+        table: tavolo,
+        place: index + 1
+    }
+    return placeholder
+});
+console.log(placeHolders)
+*/
 
 //snack 2
 const students = [
@@ -159,6 +160,7 @@ const listaVoti = JSON.stringify(voto70);
 lista70.innerHTML = "Studenti con Grades > 70: <br>" + listaVoti;
 
 const voto70AndId120 = students.filter((studenti) => studenti.Grades > 70 && studenti.Id > 120);
+// const voto70And120 = voto70.filter((studenti) => studenti.Id > 120);
 console.log(voto70AndId120);
 const listaVotID = JSON.stringify(voto70AndId120);
 lista120.innerHTML = "Studenti con Grades > 70 e Id > 120: <br>" + listaVotID;
