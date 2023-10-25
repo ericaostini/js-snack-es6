@@ -123,6 +123,17 @@ bike.forEach((bycicle, index, array)=>{
 })
 console.log(bike)
 
+const racingBikes = bike.map((bycicle, index) => {
+    const racingBike = {
+        bycicle,
+        weight: weight[index]
+    }
+    return racingBike
+})
+console.log(racingBikes)
+
+
+
 
 
 
