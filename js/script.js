@@ -85,7 +85,15 @@ function displaySegnaPosto(invitati){
         `;
 }
 
-
+/*
+vips.forEach((vip, index, array) => {
+    array[index] = {
+        name: vip,
+        place: index + 1,
+        table: tavolo
+    }
+});
+*/
 invitati.forEach((vip) => displaySegnaPosto(vip)) 
 
 
