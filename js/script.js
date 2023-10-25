@@ -153,12 +153,27 @@ const racingBikes = [
         weight: 7.4
     }
 ]
+const listaBici = document.getElementById("bici");
+function displayBici(racingBike){
+    listaBici.innerHTML += `
+    <ul>
+        <li> Nome: ${racingBike.name} </li>
+        <li> Nome: ${racingBike.weight} </li>
+    </ul>
+    `
+}
+racingBikes.forEach(bike => displayBici(bike))
 const weights = racingBikes.map(bike => bike.weight)
-console.log(weights)
+//console.log(weights)
 const minWeights = Math.min(...weights);
-console.log(minWeights)
+//console.log(minWeights)
 const bikeLower = racingBikes.filter(bike => bike.weight === minWeights)
 console.log(bikeLower)
+
+function dislayLightBike(bikeLower){
+    listaBici.innerHTML += `Bici più leggera ${bikeLower.name} con peso di ${bikeLower.weight}`
+}
+bikeLower.forEach(bike => dislayLightBike(bike));
 
 //snack 4 
 const teams = [
