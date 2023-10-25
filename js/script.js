@@ -1,66 +1,4 @@
 // snack 1
-// const vips = [
-//     {
-//         guestName: 'Brad Pitt',
-//         tableName : 'Tavolo Vip',
-//         place: 1
-
-//     },
-//     {
-//         guestName: 'Johnny Depp',
-//         tableName : 'Tavolo Vip',
-//         place: 2
-
-//     },
-//     {
-//         guestName: 'Lady Gaga',
-//         tableName : 'Tavolo Vip',
-//         place: 3
-
-//     },
-//     {
-//         guestName: 'Cristiano Ronaldo',
-//         tableName : 'Tavolo Vip',
-//         place: 4
-
-//     },
-//     {
-//         guestName: 'Georgina Rodriguez',
-//         tableName : 'Tavolo Vip',
-//         place: 5
-
-//     },
-//     {
-//         guestName: 'Chiara Ferragni',
-//         tableName : 'Tavolo Vip',
-//         place: 6
-
-//     },
-//     {
-//         guestName: 'Fedez',
-//         tableName : 'Tavolo Vip',
-//         place: 7
-
-//     },
-//     {
-//         guestName: 'George Cloney',
-//         tableName : 'Tavolo Vip',
-//         place: 8
-
-//     },
-//     {
-//         guestName: 'Amal Clooney',
-//         tableName : 'Tavolo Vip',
-//         place: 9
-
-//     },
-//     {
-//         guestName: 'Maneskin',
-//         tableName : 'Tavolo Vip',
-//         place: 10
-
-//     }
-// ]
 const vips = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 const invitati = [];
 const tavolo = "Tavolo Vip";
@@ -173,6 +111,11 @@ console.log(voto70AndId120);
 const listaVotID = JSON.stringify(voto70AndId120);
 lista120.innerHTML = "Studenti con Grades > 70 e Id > 120: <br>" + listaVotID;
 
+//snack 3
+const bike = ["Bianchi Oltre RC", "Look 795", "Willer O", "Pinarello Dogma F", "Colnago V4Rs"]
+const weight = [6.8, 7.2, 6.9, 8.6, 7.4]
+
+const 
     
 
 
