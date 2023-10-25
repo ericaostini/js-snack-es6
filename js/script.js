@@ -112,25 +112,83 @@ const listaVotID = JSON.stringify(voto70AndId120);
 lista120.innerHTML = "Studenti con Grades > 70 e Id > 120: <br>" + listaVotID;
 
 //snack 3
-const bike = ["Bianchi Oltre RC", "Look 795", "Willer O", "Pinarello Dogma F", "Colnago V4Rs"]
-const weight = [6.8, 7.2, 6.9, 8.6, 7.4];
+// const bike = ["Bianchi Oltre RC", "Look 795", "Willer O", "Pinarello Dogma F", "Colnago V4Rs"]
+// const weight = [6.8, 7.2, 6.9, 8.6, 7.4];
 
-bike.forEach((bycicle, index, array)=>{
-    array[index] = {
-        bycicle,
-        weight: weight[index]
-    }
-})
-console.log(bike)
+// bike.forEach((bycicle, index, array)=>{
+//     array[index] = {
+//         bycicle,
+//         w: weight[index]
+//     }
+// })
+// console.log(bike)
 
-const racingBikes = bike.map((bycicle, index) => {
-    const racingBike = {
-        bycicle,
-        weight: weight[index]
+// const racingBikes = bike.map((bycicle, index) => {
+//     const racingBike = {
+//         bikeName: bycicle,
+//         weightBike: weight[index]
+//     }
+//     return racingBike
+// });
+
+const racingBikes = [
+    {
+        name: "Bianchi Oltre RC",
+        weight: 6.8
+    },
+    {
+        name: "Look 795",
+        weight: 7.2
+    },
+    {
+        name: "Willer 0",
+        weight: 6.9
+    },
+    {
+        name: "Pinarello Dogma F",
+        weight: 8.6
+    },
+    {
+        name: "Colnago V4Rs",
+        weight: 7.4
     }
-    return racingBike
+]
+const {weight} = racingBikes;
+console.log(weight);
+
+//snack 4 
+const teams = [
+    {
+        name: "Juventus",
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: "Milan",
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: "Inter",
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: "Roma",
+        points: 0,
+        fouls: 0
+    }
+]
+
+const teamStatistics = teams.map((team) => {
+
 })
-console.log(racingBikes)
+
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
 
 
 
